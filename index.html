@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing around with the Revealing Module Pattern</title>
+</head>
+<body>
+
+<h1>Best drink ever: <span class="bestDrink"></span></h1>
+
+<script src="drinks.js"></script>
+<script>
+    (function() {
+        var bestDrinkContainer = document.querySelector('.bestDrink');
+        bestDrinkContainer.innerHTML = Drinks.best();
+    })();
+</script>
+
+
+
+<!-- TODO: Get values from JS and place it in this table
+<h1>Movies</h1>
+<table class="movies_results">
+    <tr>
+        <td class="rank">1</td>
+        <td class="title">hup</td>
+        <td class="year">2010</td>
+        <td class="rating">5</td>
+    </tr>
+</table>
+-->
+
+<script src="movies.js"></script>
+</body>
+</html>
